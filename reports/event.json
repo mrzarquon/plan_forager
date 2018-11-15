@@ -1,0 +1,683 @@
+{
+    "cached_catalog_status": "not_used",
+    "catalog_uuid": "8d78a148-589a-41bb-8775-65d51dc2af4f",
+    "configuration_version": 1542283605,
+    "corrective_change": false,
+    "environment": null,
+    "facts": {
+        "aio_agent_version": "6.0.2",
+        "architecture": "x86_64",
+        "augeas": {
+            "version": "1.10.1"
+        },
+        "augeasversion": "1.10.1",
+        "bios_release_date": "01/01/2011",
+        "bios_vendor": "Google",
+        "bios_version": "Google",
+        "blockdevice_sda_model": "PersistentDisk",
+        "blockdevice_sda_size": 10737418240,
+        "blockdevice_sda_vendor": "Google",
+        "blockdevices": "sda",
+        "boardassettag": "2FD1D09D-EB70-9CEA-0E4E-A4F22FB2CE7B",
+        "boardmanufacturer": "Google",
+        "boardproductname": "Google Compute Engine",
+        "chassistype": "Other",
+        "clientcert": "splunk-intermediate-sydney.c.splunk-217321.internal",
+        "clientnoop": false,
+        "clientversion": "6.0.2",
+        "dhcp_servers": {
+            "eth0": "169.254.169.254",
+            "system": "169.254.169.254"
+        },
+        "disks": {
+            "sda": {
+                "model": "PersistentDisk",
+                "size": "10.00 GiB",
+                "size_bytes": 10737418240,
+                "vendor": "Google"
+            }
+        },
+        "dmi": {
+            "bios": {
+                "release_date": "01/01/2011",
+                "vendor": "Google",
+                "version": "Google"
+            },
+            "board": {
+                "asset_tag": "2FD1D09D-EB70-9CEA-0E4E-A4F22FB2CE7B",
+                "manufacturer": "Google",
+                "product": "Google Compute Engine"
+            },
+            "chassis": {
+                "type": "Other"
+            },
+            "manufacturer": "Google",
+            "product": {
+                "name": "Google Compute Engine",
+                "serial_number": "GoogleCloud-2FD1D09DEB709CEA0E4EA4F22FB2CE7B",
+                "uuid": "2FD1D09D-EB70-9CEA-0E4E-A4F22FB2CE7B"
+            }
+        },
+        "domain": "c.splunk-217321.internal",
+        "facterversion": "3.12.0",
+        "filesystems": "xfs",
+        "fips_enabled": false,
+        "fqdn": "splunk-intermediate-sydney.c.splunk-217321.internal",
+        "gce": {
+            "instance": {
+                "attributes": {
+                    "created-by": "projects/1011032966469/zones/us-west1-b/instanceGroupManagers/web-front-ends",
+                    "startup-script": "#!/bin/bash\n\ncurl -k https://puppet.c.splunk-217321.internal:8140/packages/current/install.bash | sudo bash -s extension_requests:pp_role=intermediateforwarder extension_requests:pp_apptier=production extension_requests:pp_securitypolicy=trusted extension_requests:pp_application=splunk"
+                },
+                "description": "",
+                "disks": [
+                    {
+                        "deviceName": "splunk-intermediate-sydney",
+                        "index": 0,
+                        "mode": "READ_WRITE",
+                        "type": "PERSISTENT"
+                    }
+                ],
+                "hostname": "splunk-intermediate-sydney.c.splunk-217321.internal",
+                "id": 9052403362569375914,
+                "image": "centos-7-v20180911",
+                "licenses": [
+                    {
+                        "id": "1000207"
+                    }
+                ],
+                "machineType": "n1-standard-1",
+                "maintenanceEvent": "NONE",
+                "name": "splunk-intermediate-sydney",
+                "networkInterfaces": [
+                    {
+                        "accessConfigs": [
+                            {
+                                "externalIp": "35.189.58.221",
+                                "type": "ONE_TO_ONE_NAT"
+                            }
+                        ],
+                        "dnsServers": [
+                            "169.254.169.254"
+                        ],
+                        "forwardedIps": [],
+                        "gateway": "10.152.0.1",
+                        "ip": "10.152.0.3",
+                        "ipAliases": [],
+                        "mac": "42:01:0a:98:00:03",
+                        "network": "default",
+                        "subnetmask": "255.255.240.0",
+                        "targetInstanceIps": []
+                    }
+                ],
+                "preempted": "FALSE",
+                "scheduling": {
+                    "automaticRestart": "TRUE",
+                    "onHostMaintenance": "MIGRATE",
+                    "preemptible": "FALSE"
+                },
+                "serviceAccounts": {
+                    "1011032966469-compute@developer.gserviceaccount.com": {
+                        "aliases": [
+                            "default"
+                        ],
+                        "email": "1011032966469-compute@developer.gserviceaccount.com",
+                        "scopes": [
+                            "https://www.googleapis.com/auth/devstorage.read_only",
+                            "https://www.googleapis.com/auth/logging.write",
+                            "https://www.googleapis.com/auth/monitoring.write",
+                            "https://www.googleapis.com/auth/servicecontrol",
+                            "https://www.googleapis.com/auth/service.management.readonly",
+                            "https://www.googleapis.com/auth/trace.append"
+                        ]
+                    },
+                    "default": {
+                        "aliases": [
+                            "default"
+                        ],
+                        "email": "1011032966469-compute@developer.gserviceaccount.com",
+                        "scopes": [
+                            "https://www.googleapis.com/auth/devstorage.read_only",
+                            "https://www.googleapis.com/auth/logging.write",
+                            "https://www.googleapis.com/auth/monitoring.write",
+                            "https://www.googleapis.com/auth/servicecontrol",
+                            "https://www.googleapis.com/auth/service.management.readonly",
+                            "https://www.googleapis.com/auth/trace.append"
+                        ]
+                    }
+                },
+                "tags": [
+                    "https-server"
+                ],
+                "zone": "australia-southeast1-b"
+            },
+            "oslogin": {},
+            "project": {
+                "attributes": {
+                    "ssh-keys": "cbarker:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDhdjESyOPjCFVl1azFb8r5FjhacpdNFLzvxgNnFERGA44K3qty12sNr/6+eHDK9uWLekJJ1HJjtChFjAGA05pB4VqWlx0aOeqSLoZiAHw9uYBcgfPuN7/fhCUjUuA7ULLN52WJQwVyHehynnYKzJhY0ywIVXUtLb42DK4WyfZ1XscOlsVXuvGHeWuEnnp7RFunRih5+7NZ0clpRhZR+IN0eheFQGuShsPYJPXb/+kll2UpebBUVR0eO4TNkDU1+U60Lke5zFe8MQRcvfmeg1H5m0Ih17md3k6HPT5vCubuJxF9HKP1iaOGW8qv/LvBOxiDCtqaYoUKWJY2xu6ZNswYFk6p5zkVzc5qrPujQGxR6PhDcjyLLgAYL9P6+FlJrRQvk6/jtY8xkmPDkmEvPdxA9wqF3mYV7KU4HFB4aUHeN3eSfDL++5WkOS7Pr2uHoeVazUmp+c/mivPphFGCy08ongJlQ2OwX0HJ7UcrVKxy9XnP6gDjx7GMCe/sZzkdgC8vlx9X4VmW35WVyDJsxRMAm5uAOQb+d8I5xe5Pob98depywfkz14ciMvIuW/ckQrkedhWiybeI05k70BDQuKYq30eg5ZFbWDVxv3nZqPhRXE3mSYdW26+azfVem21i2o7dIVSIExyziJwyXhYvXLjxIC23//7k6tiOdRO9qh/PSw== cbarker@puppet.com"
+                },
+                "numericProjectId": 1011032966469,
+                "projectId": "splunk-217321"
+            }
+        },
+        "gid": "root",
+        "hardwareisa": "x86_64",
+        "hardwaremodel": "x86_64",
+        "hostname": "splunk-intermediate-sydney",
+        "hypervisors": {
+            "kvm": {
+                "google": true
+            }
+        },
+        "id": "root",
+        "identity": {
+            "gid": 0,
+            "group": "root",
+            "privileged": true,
+            "uid": 0,
+            "user": "root"
+        },
+        "interfaces": "eth0,lo",
+        "ipaddress": "10.152.0.3",
+        "ipaddress6": "fe80::4001:aff:fe98:3",
+        "ipaddress6_eth0": "fe80::4001:aff:fe98:3",
+        "ipaddress6_lo": "::1",
+        "ipaddress_eth0": "10.152.0.3",
+        "ipaddress_lo": "127.0.0.1",
+        "is_virtual": true,
+        "kernel": "Linux",
+        "kernelmajversion": "3.10",
+        "kernelrelease": "3.10.0-862.11.6.el7.x86_64",
+        "kernelversion": "3.10.0",
+        "load_averages": {
+            "15m": 0.06,
+            "1m": 0.17,
+            "5m": 0.07
+        },
+        "macaddress": "42:01:0a:98:00:03",
+        "macaddress_eth0": "42:01:0a:98:00:03",
+        "manufacturer": "Google",
+        "memory": {
+            "system": {
+                "available": "1.53 GiB",
+                "available_bytes": 1647271936,
+                "capacity": "55.60%",
+                "total": "3.46 GiB",
+                "total_bytes": 3710091264,
+                "used": "1.92 GiB",
+                "used_bytes": 2062819328
+            }
+        },
+        "memoryfree": "1.53 GiB",
+        "memoryfree_mb": 1570.9609375,
+        "memorysize": "3.46 GiB",
+        "memorysize_mb": 3538.21875,
+        "mountpoints": {
+            "/": {
+                "available": "7.82 GiB",
+                "available_bytes": 8399159296,
+                "capacity": "21.69%",
+                "device": "/dev/sda1",
+                "filesystem": "xfs",
+                "options": [
+                    "rw",
+                    "seclabel",
+                    "relatime",
+                    "attr2",
+                    "inode64",
+                    "noquota"
+                ],
+                "size": "9.99 GiB",
+                "size_bytes": 10725883904,
+                "used": "2.17 GiB",
+                "used_bytes": 2326724608
+            },
+            "/dev/shm": {
+                "available": "1.73 GiB",
+                "available_bytes": 1855045632,
+                "capacity": "0%",
+                "device": "tmpfs",
+                "filesystem": "tmpfs",
+                "options": [
+                    "rw",
+                    "seclabel",
+                    "nosuid",
+                    "nodev"
+                ],
+                "size": "1.73 GiB",
+                "size_bytes": 1855045632,
+                "used": "0 bytes",
+                "used_bytes": 0
+            },
+            "/run": {
+                "available": "1.66 GiB",
+                "available_bytes": 1787609088,
+                "capacity": "3.64%",
+                "device": "tmpfs",
+                "filesystem": "tmpfs",
+                "options": [
+                    "rw",
+                    "seclabel",
+                    "nosuid",
+                    "nodev",
+                    "mode=755"
+                ],
+                "size": "1.73 GiB",
+                "size_bytes": 1855045632,
+                "used": "64.31 MiB",
+                "used_bytes": 67436544
+            },
+            "/sys/fs/cgroup": {
+                "available": "1.73 GiB",
+                "available_bytes": 1855045632,
+                "capacity": "0%",
+                "device": "tmpfs",
+                "filesystem": "tmpfs",
+                "options": [
+                    "ro",
+                    "seclabel",
+                    "nosuid",
+                    "nodev",
+                    "noexec",
+                    "mode=755"
+                ],
+                "size": "1.73 GiB",
+                "size_bytes": 1855045632,
+                "used": "0 bytes",
+                "used_bytes": 0
+            }
+        },
+        "mtu_eth0": 1460,
+        "mtu_lo": 65536,
+        "netmask": "255.255.255.255",
+        "netmask6": "ffff:ffff:ffff:ffff::",
+        "netmask6_eth0": "ffff:ffff:ffff:ffff::",
+        "netmask6_lo": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "netmask_eth0": "255.255.255.255",
+        "netmask_lo": "255.0.0.0",
+        "network": "10.152.0.3",
+        "network6": "fe80::",
+        "network6_eth0": "fe80::",
+        "network6_lo": "::1",
+        "network_eth0": "10.152.0.3",
+        "network_lo": "127.0.0.0",
+        "networking": {
+            "dhcp": "169.254.169.254",
+            "domain": "c.splunk-217321.internal",
+            "fqdn": "splunk-intermediate-sydney.c.splunk-217321.internal",
+            "hostname": "splunk-intermediate-sydney",
+            "interfaces": {
+                "eth0": {
+                    "bindings": [
+                        {
+                            "address": "10.152.0.3",
+                            "netmask": "255.255.255.255",
+                            "network": "10.152.0.3"
+                        }
+                    ],
+                    "bindings6": [
+                        {
+                            "address": "fe80::4001:aff:fe98:3",
+                            "netmask": "ffff:ffff:ffff:ffff::",
+                            "network": "fe80::"
+                        }
+                    ],
+                    "dhcp": "169.254.169.254",
+                    "ip": "10.152.0.3",
+                    "ip6": "fe80::4001:aff:fe98:3",
+                    "mac": "42:01:0a:98:00:03",
+                    "mtu": 1460,
+                    "netmask": "255.255.255.255",
+                    "netmask6": "ffff:ffff:ffff:ffff::",
+                    "network": "10.152.0.3",
+                    "network6": "fe80::"
+                },
+                "lo": {
+                    "bindings": [
+                        {
+                            "address": "127.0.0.1",
+                            "netmask": "255.0.0.0",
+                            "network": "127.0.0.0"
+                        }
+                    ],
+                    "bindings6": [
+                        {
+                            "address": "::1",
+                            "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+                            "network": "::1"
+                        }
+                    ],
+                    "ip": "127.0.0.1",
+                    "ip6": "::1",
+                    "mtu": 65536,
+                    "netmask": "255.0.0.0",
+                    "netmask6": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+                    "network": "127.0.0.0",
+                    "network6": "::1"
+                }
+            },
+            "ip": "10.152.0.3",
+            "ip6": "fe80::4001:aff:fe98:3",
+            "mac": "42:01:0a:98:00:03",
+            "mtu": 1460,
+            "netmask": "255.255.255.255",
+            "netmask6": "ffff:ffff:ffff:ffff::",
+            "network": "10.152.0.3",
+            "network6": "fe80::",
+            "primary": "eth0"
+        },
+        "operatingsystem": "CentOS",
+        "operatingsystemmajrelease": "7",
+        "operatingsystemrelease": "7.5.1804",
+        "os": {
+            "architecture": "x86_64",
+            "family": "RedHat",
+            "hardware": "x86_64",
+            "name": "CentOS",
+            "release": {
+                "full": "7.5.1804",
+                "major": "7",
+                "minor": "5"
+            },
+            "selinux": {
+                "config_mode": "enforcing",
+                "current_mode": "enforcing",
+                "enabled": true,
+                "enforced": true,
+                "policy_version": "31"
+            }
+        },
+        "osfamily": "RedHat",
+        "partitions": {
+            "/dev/sda1": {
+                "filesystem": "xfs",
+                "label": "/",
+                "mount": "/",
+                "size": "10.00 GiB",
+                "size_bytes": 10736369664,
+                "uuid": "5f315c54-d5e4-4e66-99f1-1ddd6ddfac88"
+            }
+        },
+        "path": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin",
+        "physicalprocessorcount": 1,
+        "processor0": "Intel(R) Xeon(R) CPU @ 2.20GHz",
+        "processorcount": 1,
+        "processors": {
+            "count": 1,
+            "isa": "x86_64",
+            "models": [
+                "Intel(R) Xeon(R) CPU @ 2.20GHz"
+            ],
+            "physicalcount": 1
+        },
+        "productname": "Google Compute Engine",
+        "puppetversion": "6.0.2",
+        "ruby": {
+            "platform": "x86_64-linux",
+            "sitedir": "/opt/puppetlabs/puppet/lib/ruby/site_ruby/2.5.0",
+            "version": "2.5.1"
+        },
+        "rubyplatform": "x86_64-linux",
+        "rubysitedir": "/opt/puppetlabs/puppet/lib/ruby/site_ruby/2.5.0",
+        "rubyversion": "2.5.1",
+        "selinux": true,
+        "selinux_config_mode": "enforcing",
+        "selinux_current_mode": "enforcing",
+        "selinux_enforced": true,
+        "selinux_policyversion": "31",
+        "serialnumber": "GoogleCloud-2FD1D09DEB709CEA0E4EA4F22FB2CE7B",
+        "ssh": {
+            "ecdsa": {
+                "fingerprints": {
+                    "sha1": "SSHFP 3 1 aa530d17c3229185ba5ea96f1097189e89320467",
+                    "sha256": "SSHFP 3 2 32282f910d5a28e8c07ee9fd005825ba822ad986d8d8626c1981a3712b64b273"
+                },
+                "key": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBES7+sInTC+ojLeVaqbB62j5EiQCx6Wkz3knRf4vZC6C521MrQfwCNjbcukZOtnJqnOqGfuoWDdRicDlBKd9sqY=",
+                "type": "ecdsa-sha2-nistp256"
+            },
+            "ed25519": {
+                "fingerprints": {
+                    "sha1": "SSHFP 4 1 b85adf6fa811ca2f053196a097ccfaf20b5614c7",
+                    "sha256": "SSHFP 4 2 af1bfbecb0f7348259de81940292c0e8b848ee6e6eed99b5684748bcb3125f96"
+                },
+                "key": "AAAAC3NzaC1lZDI1NTE5AAAAIMKlI3z1yzCBTPHV4Mpe8qvDf9PFAlJHFQqFmZ/dRj1w",
+                "type": "ssh-ed25519"
+            },
+            "rsa": {
+                "fingerprints": {
+                    "sha1": "SSHFP 1 1 9759b176f803ed86d1e6b89426728e7a027b9566",
+                    "sha256": "SSHFP 1 2 69c63d316ba32f15a874b342fc866cf06318f71a4a5012dbaf8c1f0ed5640cf7"
+                },
+                "key": "AAAAB3NzaC1yc2EAAAADAQABAAABAQCy6Zv8jR56UJ4xh6L2LVywyuGVb0le8Tfq0d5Es6zlrB3cMvRAt193UFodY7ktNnlJTfqbNCRWtQqkAA8WNe89x1IBm56Aj2fsHofXgUz6ZbQfHWHNG8M6G+PWckUwwyk81EQ7EY+YXBbyPUpUYeDeFoVgKX4YLVEe/I94kknYHcZvQbIQOx6xCVmcMAUkzed2jsZo/bRUcsRLAY/lIpJ9oqR+qWSSCytXwHQdL7WaAeb0ao8hzTueO1VSyzrLG0i8SZEF3JbhtHxa4nKBhB8+xPkO45Au18JgJRHqSZnzbWhH0gJhTPkYjFGABi4tyd91doLMc4Vs5qYx7kTqOAC7",
+                "type": "ssh-rsa"
+            }
+        },
+        "sshecdsakey": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBES7+sInTC+ojLeVaqbB62j5EiQCx6Wkz3knRf4vZC6C521MrQfwCNjbcukZOtnJqnOqGfuoWDdRicDlBKd9sqY=",
+        "sshed25519key": "AAAAC3NzaC1lZDI1NTE5AAAAIMKlI3z1yzCBTPHV4Mpe8qvDf9PFAlJHFQqFmZ/dRj1w",
+        "sshfp_ecdsa": "SSHFP 3 1 aa530d17c3229185ba5ea96f1097189e89320467\nSSHFP 3 2 32282f910d5a28e8c07ee9fd005825ba822ad986d8d8626c1981a3712b64b273",
+        "sshfp_ed25519": "SSHFP 4 1 b85adf6fa811ca2f053196a097ccfaf20b5614c7\nSSHFP 4 2 af1bfbecb0f7348259de81940292c0e8b848ee6e6eed99b5684748bcb3125f96",
+        "sshfp_rsa": "SSHFP 1 1 9759b176f803ed86d1e6b89426728e7a027b9566\nSSHFP 1 2 69c63d316ba32f15a874b342fc866cf06318f71a4a5012dbaf8c1f0ed5640cf7",
+        "sshrsakey": "AAAAB3NzaC1yc2EAAAADAQABAAABAQCy6Zv8jR56UJ4xh6L2LVywyuGVb0le8Tfq0d5Es6zlrB3cMvRAt193UFodY7ktNnlJTfqbNCRWtQqkAA8WNe89x1IBm56Aj2fsHofXgUz6ZbQfHWHNG8M6G+PWckUwwyk81EQ7EY+YXBbyPUpUYeDeFoVgKX4YLVEe/I94kknYHcZvQbIQOx6xCVmcMAUkzed2jsZo/bRUcsRLAY/lIpJ9oqR+qWSSCytXwHQdL7WaAeb0ao8hzTueO1VSyzrLG0i8SZEF3JbhtHxa4nKBhB8+xPkO45Au18JgJRHqSZnzbWhH0gJhTPkYjFGABi4tyd91doLMc4Vs5qYx7kTqOAC7",
+        "system_uptime": {
+            "days": 20,
+            "hours": 490,
+            "seconds": 1766134,
+            "uptime": "20 days"
+        },
+        "timezone": "UTC",
+        "uptime": "20 days",
+        "uptime_days": 20,
+        "uptime_hours": 490,
+        "uptime_seconds": 1766134,
+        "uuid": "2FD1D09D-EB70-9CEA-0E4E-A4F22FB2CE7B",
+        "virtual": "gce"
+    },
+    "host": "splunk-intermediate-sydney.c.splunk-217321.internal",
+    "logs": [
+        {
+            "file": null,
+            "level": "notice",
+            "line": null,
+            "message": "hello",
+            "source": "Puppet",
+            "tags": [
+                "notice"
+            ],
+            "time": "2018-11-15T12:06:48.529575625+00:00"
+        },
+        {
+            "file": "/Users/cbarker/.puppetlabs/etc/code/modules/splunk_hec/plans/notify.pp",
+            "level": "notice",
+            "line": 12,
+            "message": "defined message as hello",
+            "source": "/Stage[main]/Main/Notify[hello]/message",
+            "tags": [
+                "notice",
+                "notify",
+                "hello",
+                "class"
+            ],
+            "time": "2018-11-15T12:06:48.530345318+00:00"
+        },
+        {
+            "file": null,
+            "level": "notice",
+            "line": null,
+            "message": "Applied catalog in 0.01 seconds",
+            "source": "Puppet",
+            "tags": [
+                "notice"
+            ],
+            "time": "2018-11-15T12:06:48.536521219+00:00"
+        }
+    ],
+    "metrics": {
+        "changes": {
+            "label": "Changes",
+            "name": "changes",
+            "values": [
+                [
+                    "total",
+                    "Total",
+                    1
+                ]
+            ]
+        },
+        "events": {
+            "label": "Events",
+            "name": "events",
+            "values": [
+                [
+                    "total",
+                    "Total",
+                    1
+                ],
+                [
+                    "failure",
+                    "Failure",
+                    0
+                ],
+                [
+                    "success",
+                    "Success",
+                    1
+                ]
+            ]
+        },
+        "resources": {
+            "label": "Resources",
+            "name": "resources",
+            "values": [
+                [
+                    "total",
+                    "Total",
+                    1
+                ],
+                [
+                    "skipped",
+                    "Skipped",
+                    0
+                ],
+                [
+                    "failed",
+                    "Failed",
+                    0
+                ],
+                [
+                    "failed_to_restart",
+                    "Failed to restart",
+                    0
+                ],
+                [
+                    "restarted",
+                    "Restarted",
+                    0
+                ],
+                [
+                    "changed",
+                    "Changed",
+                    1
+                ],
+                [
+                    "out_of_sync",
+                    "Out of sync",
+                    1
+                ],
+                [
+                    "scheduled",
+                    "Scheduled",
+                    0
+                ],
+                [
+                    "corrective_change",
+                    "Corrective change",
+                    0
+                ]
+            ]
+        },
+        "time": {
+            "label": "Time",
+            "name": "time",
+            "values": [
+                [
+                    "notify",
+                    "Notify",
+                    0.001077456
+                ],
+                [
+                    "config_retrieval",
+                    "Config retrieval",
+                    0
+                ],
+                [
+                    "transaction_evaluation",
+                    "Transaction evaluation",
+                    0.003820988116785884
+                ],
+                [
+                    "catalog_application",
+                    "Catalog application",
+                    0.009419993031769991
+                ],
+                [
+                    "total",
+                    "Total",
+                    0.033357571
+                ]
+            ]
+        }
+    },
+    "noop": false,
+    "noop_pending": false,
+    "puppet_version": "6.0.2",
+    "report_format": 10,
+    "resource_statuses": {
+        "Notify[hello]": {
+            "change_count": 1,
+            "changed": true,
+            "containment_path": [
+                "Stage[main]",
+                "Main",
+                "Notify[hello]"
+            ],
+            "corrective_change": false,
+            "evaluation_time": 0.001077456,
+            "events": [
+                {
+                    "audited": false,
+                    "corrective_change": false,
+                    "desired_value": "hello",
+                    "historical_value": null,
+                    "message": "defined message as hello",
+                    "name": "message_changed",
+                    "previous_value": "absent",
+                    "property": "message",
+                    "redacted": null,
+                    "status": "success",
+                    "time": "2018-11-15T12:06:48.529516997+00:00"
+                }
+            ],
+            "failed": false,
+            "failed_to_restart": false,
+            "file": "/Users/cbarker/.puppetlabs/etc/code/modules/splunk_hec/plans/notify.pp",
+            "line": 12,
+            "out_of_sync": true,
+            "out_of_sync_count": 1,
+            "provider_used": null,
+            "resource": "Notify[hello]",
+            "resource_type": "Notify",
+            "skipped": false,
+            "tags": [
+                "notify",
+                "hello",
+                "class"
+            ],
+            "time": "2018-11-15T12:06:48.529339484+00:00",
+            "title": "hello"
+        }
+    },
+    "status": "changed",
+    "time": "2018-11-15T12:06:48.474828006+00:00",
+    "transaction_completed": true,
+    "transaction_uuid": null
+}
